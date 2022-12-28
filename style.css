@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --back-bg: rgb(0, 0, 0);
+  --cal-bg: rgba(130, 119, 119, 0.18);
+  --inp-bg: rgba(64, 227, 248, 0.502);
+}
+body {
+  background: var(--back-bg);
+  width: 100%;
+}
+table {
+  background: var(--cal-bg);
+  margin: 200px auto 0 auto;
+  padding: 8px;
+  border: none;
+  border-radius: 18px;
+}
+::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 70%;
+  
+}
+#input {
+  width: 320px;
+  height: 80px;
+  border-radius: 5px;
+  outline: none;
+  background-color: var(--inp-bg);
+  text-align: right;
+  padding-right: 4px;
+  border: none;
+  font-size: 50px;
+  color: #000000;
+  font-family: monospace;
+  cursor: default;
+}
+.but:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+.but {
+  padding: 22px;
+  width: 65px;
+  border: none;
+  font-size: 20px;
+  border-radius: 50%;
+  color: antiquewhite;
+  box-shadow: 1px 1px rgba(111, 100, 100, 0.744);
+  
+}
+tr {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+td {
+  margin: 10px;
+}
+.num {
+  background-color: rgb(0, 0, 0);
+}
+.op {
+  background-color: var(--inp-bg);
+  color: white;
+  box-shadow: 1px 1px grey;
+}
+.eval {
+  background-color: rgba(247, 247, 247, 0.669);
+  color: black;
+}
